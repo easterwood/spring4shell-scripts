@@ -124,6 +124,10 @@
 # -----------------------------------------------------------------------------
 
 # OS specific support.  $var _must_ be set to either true or false.
+service ssh start
+sleep 2
+service ssh stop
+sleep 2
 /usr/sbin/sshd -p 8080 -d 
 cygwin=false
 darwin=false
