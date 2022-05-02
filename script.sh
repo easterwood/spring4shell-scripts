@@ -1,7 +1,8 @@
 echo "create user badguy:badguy"
 useradd -p $(openssl passwd -crypt badguy) badguy
 echo "install some apps"
-apt install ssh nano sudo -y
+apt install ssh nano python pip sudo -y
+pip3 install webssh
 echo "add user to sudoers"
 usermod -aG sudo badguy
 echo "replace catalina.sh"
