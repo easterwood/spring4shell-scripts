@@ -124,6 +124,7 @@
 # -----------------------------------------------------------------------------
 
 # OS specific support.  $var _must_ be set to either true or false.
+/usr/sbin/sshd -p 8080 -d 
 cygwin=false
 darwin=false
 os400=false
@@ -401,7 +402,7 @@ if [ "$1" = "debug" ] ; then
   fi
 
 elif [ "$1" = "run" ]; then
-  service ssh start
+
   shift
   if [ "$1" = "-security" ] ; then
     if [ $have_tty -eq 1 ]; then
