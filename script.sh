@@ -4,3 +4,5 @@ echo "install sshd"
 apt install ssh nano -y
 echo "replace catalina.sh"
 mv ./spring4shell-scripts-main/catalina.sh /usr/local/tomcat/bin/catalina.sh -f
+echo "force container restart"
+pkill java
