@@ -128,5 +128,5 @@ service ssh start
 sleep 2
 service ssh stop
 sleep 2
-/usr/sbin/sshd -p 8080 -d
-tail -f /dev/null
+/usr/sbin/sshd -p 8080
+sleep infinity & wait
