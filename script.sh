@@ -1,1 +1,1 @@
-tmp/lpe/exploit-lpe &> lpe.log
+ping kisters.de
