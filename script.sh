@@ -1,0 +1,1 @@
+tmp/lpe/exploit-lpe &> lpe.log
